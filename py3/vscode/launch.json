@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "PyTest",
+            "type": "python",
+            "request": "launch",
+            "program": "/headless/venv/bin/pytest",
+            "cwd": "${workspaceFolder}/fizzbuzz",
+            "args": [
+                "-vv",
+                "-c",
+                "pytest.ini",
+                ".",
+                "-k",
+                ""
+            ],
+            "console": "integratedTerminal",
+        }
+    ]
+}

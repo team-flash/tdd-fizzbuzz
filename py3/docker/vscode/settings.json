@@ -1,0 +1,32 @@
+{
+    "python.venvPath": "/headless",
+    "python.venvFolders": [
+        "venv"
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.pyc": true,
+        "**/__pycache__": true,
+        "**/.pytest_cache": true,
+    },
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_django"
+    ],
+    "python.pythonPath": "/headless/venv/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "workbench.editor.enablePreview": false,
+    "editor.renderWhitespace": "boundary",
+    "files.trimTrailingWhitespace": true,
+    "editor.rulers": [88],
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=88"
+    ]
+}
