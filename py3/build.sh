@@ -7,4 +7,4 @@ abspath() {
 }
 
 MY_PATH=$(abspath $(dirname "$0"))
-docker build -t teamflash/py3dev:1.0 ${MY_PATH}
+docker build --no-cache -t teamflash/py3dev:1.0 ${MY_PATH}
